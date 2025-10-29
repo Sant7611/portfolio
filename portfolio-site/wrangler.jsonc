@@ -1,0 +1,5 @@
+{
+  "name": "YOUR_PROJECT_NAME",
+  "compatibility_date": "2025-10-29",
+  "pages_build_output_dir": "./dist"
+}

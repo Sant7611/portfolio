@@ -39,7 +39,7 @@ const About = () => {
 
           {/* ITEM 2 */}
           <li className="flex gap-3 py-4">
-            <RiArrowGoForwardLine size={30} className="mt-1 flex-shrink-0" />
+            <RiArrowGoForwardLine size={30} className="mt-1 " />
             <div className="max-w-xl">
               <h1 className="text-lg md:text-2xl font-semibold leading-normal">
                 Problem Solver
