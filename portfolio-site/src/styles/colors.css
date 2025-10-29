@@ -1,0 +1,31 @@
+/* Central color variables and overrides for existing Tailwind arbitrary-color classes
+   This file is imported after Tailwind's base so it can override generated utility classes
+   without editing component code. */
+
+:root {
+  /* Modern Deep Blue palette (recommended) */
+  --bg: #0B1220;        /* page background */
+  --surface: #0F1724;   /* cards, panels */
+  --primary: #5661F2;   /* primary buttons / highlights */
+  --accent: #F6AE2D;    /* CTA / accent */
+  --muted: #94A3B8;     /* secondary text */
+  --text: #E6EEF8;      /* main text color */
+}
+
+/* Override specific arbitrary-color Tailwind utilities used across the codebase. */
+/* These selectors match classes like `bg-[#171d32]`, `bg-[#0c0e19]`, and `bg[#465697]` */
+.bg-\[\#171d32\] { background-color: var(--bg) !important; }
+.bg-\[\#0c0e19\] { background-color: var(--surface) !important; }
+.bg-\[\#465697\] { background-color: var(--primary) !important; }
+
+/* Helpful mapping utilities (optional) to use in future without changing components) */
+.bg-primary { background-color: var(--primary) !important; }
+.bg-surface { background-color: var(--surface) !important; }
+.text-default { color: var(--text) !important; }
+
+/* Footer override (was using bg-[#465697]) */
+.bg-\[\#465697\].text-white { background-color: var(--primary) !important; color: #ffffff !important; }
+
+/* If any components accidentally used border or other arbitrary colors, these
+   selectors can be expanded later. Using `!important` here ensures overrides
+   without modifying component code. */
