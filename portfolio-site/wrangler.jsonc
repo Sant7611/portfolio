@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
   "compatibility_date": "2025-10-29",
-  "pages_build_output_dir": "./dist"
+  "pages_build_output_dir": "./dist",
+  "CLOUDFLARE_API_TOKEN": "5cb59ed5c9c1d7eb147127fdb71e4ae66a156",
 }
