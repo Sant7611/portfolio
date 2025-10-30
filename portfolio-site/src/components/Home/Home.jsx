@@ -5,6 +5,7 @@ import TextChange from "../TextChange";
 const Home = () => {
   return (
   <div id="home" className="scroll-mt-20 text-white flex flex-col-reverse md:flex-row w-full  justify-between gap-7  p-10 md:p-20">
+    
       <div className="md:w-2/4 md:pt-10">
         <h1 className="text-3xl md:text-4xl md:h-2/5 h-15 font-bold flex leading-normal ">
           <TextChange  />

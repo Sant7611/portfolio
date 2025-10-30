@@ -50,6 +50,7 @@ const Navbar = () => {
           
         />
       )}
+      <div className="bg-amber-500 flex items-center justify-between mt-5 px-3">The site is under development !!!!!</div>
     </nav>
   );
 };
