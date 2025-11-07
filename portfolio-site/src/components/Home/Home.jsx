@@ -13,7 +13,7 @@ const Home = () => {
         <p className="text-sm md:text-2xl tracking-tight ">
           I am a motivated learner passionate about frontend development, eager to grow, collaborate effectively, and improve my skills through experience.
         </p>
-        <a href="#contact"inline-block className="mt-5 no-underline md:m-10 text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 rounded-3xl bg-primary  ">
+        <a href="#contact" className="inline-block mt-5 no-underline md:m-10 text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 rounded-3xl bg-primary  ">
           Contact Me
         </a>
       </div>
