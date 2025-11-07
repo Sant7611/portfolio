@@ -12,7 +12,7 @@ const Footer = () => {
         <ul className="text-sm md:text-lg">
             <li>
                 <IoIosMail size={30} className='inline-block mx-3'/>
-                sbohara@gmail.com
+                sbohara579@gmail.com
             </li>
             <li>
                 <IoMdCall size={30} className='inline-block mx-3' />
