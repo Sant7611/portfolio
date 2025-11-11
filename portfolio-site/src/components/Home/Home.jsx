@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../../assets/avatar-prof.jpg";
+import avatar from "../../assets/profile.jpg";
 import TextChange from "../TextChange";
 
 const Home = () => {

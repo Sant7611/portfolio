@@ -1,6 +1,6 @@
 import React from "react";
 import { RiArrowGoForwardLine } from "@remixicon/react";
-import avatar from "../../assets/avatar-prof.jpg";
+import avatar from "../../assets/about_prof.jpg";
 
 const About = () => {
   return (
