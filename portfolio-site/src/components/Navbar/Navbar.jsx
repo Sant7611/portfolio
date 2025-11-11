@@ -18,11 +18,7 @@ const Navbar = () => {
             About
           </li>
         </a>
-        <a href="#experience">
-          <li className="font-medium transition-all duration-300 p-1 md:p-0 ">
-            Experience
-          </li>
-        </a>
+        
         <a href="#projects">
           <li className="font-medium transition-all duration-300 p-1 md:p-0 ">
             Projects
@@ -47,7 +43,10 @@ const Navbar = () => {
         <RiCloseLine
           size={30}
           className="md:hidden absolute right-10 top-6 transition-all duration-300"
-          
+          onClick={() => {
+            openMenu(!menu);
+            setShowMenu(!showMenu);
+          }}
         />
       )}
       <div className="bg-amber-500 flex items-center justify-between mt-5 px-3">The site is under development !!!!!</div>
