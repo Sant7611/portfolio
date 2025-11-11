@@ -11,29 +11,39 @@ const Navbar = () => {
       <ul
         className={` ${
           menu ? "block " : "hidden "
-        }  mx-24 py-2 mt-4 font-semibold md:mt-5  px-2 rounded-xl bg-opacity-30 md:border-none text-center md:bg-transparent md:static md:mx-0 md:flex gap-6`}
+        } mx-24 py-2 mt-4 font-semibold md:mt-5 px-2 rounded-xl bg-opacity-30 md:border-none text-center md:bg-transparent md:static md:mx-0 md:flex gap-6`}
       >
         <a href="#about">
-          <li className="font-medium transition-all duration-300 p-1 md:p-0 ">
+          <li className="font-medium transition-all duration-300 p-1 md:p-0 hover:text-blue-500">
             About
           </li>
         </a>
-        
+
         <a href="#projects">
-          <li className="font-medium transition-all duration-300 p-1 md:p-0 ">
+          <li className="font-medium transition-all duration-300 p-1 md:p-0 hover:text-blue-500">
             Projects
           </li>
         </a>
+
         <a href="#contact">
-          <li className="font-medium transition-all duration-300 p-1 md:p-0 ">
+          <li className="font-medium transition-all duration-300 p-1 md:p-0 hover:text-blue-500">
             Contact
           </li>
         </a>
+
+        <a
+          href="/santoshCV.pdf"
+          target="_blank"
+          className="inline-block px-5 py-2 border border-blue-500 text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:border-blue-600 hover:text-white hover:shadow-[0_0_10px_#3b82f6] transition-all duration-300"
+        >
+          View CV
+        </a>
       </ul>
+
       {showMenu ? (
         <RiMenu2Line
           size={30}
-          className="md:hidden  absolute right-10 top-6 transition-all duration-300"
+          className="md:hidden absolute right-10 top-6 transition-all duration-300"
           onClick={() => {
             openMenu(!menu);
             setShowMenu(!showMenu);
@@ -49,7 +59,10 @@ const Navbar = () => {
           }}
         />
       )}
-      <div className="bg-amber-500 flex items-center justify-between mt-5 px-3">The site is under development !!!!!</div>
+
+      <div className="bg-amber-500 flex items-center justify-between mt-5 px-3">
+        The site is under development !!!!! 
+      </div>
     </nav>
   );
 };
