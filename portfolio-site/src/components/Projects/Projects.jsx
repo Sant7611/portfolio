@@ -15,7 +15,7 @@ const Projects = () => {
       source: "https://github.com/Sant7611/Project",
     },
     {
-      title: "News Magazine",
+      title: "Todo App",
       main: "This is a todo app",
       source: "https://github.com/Sant7611/react-todoApp/tree/main/Todo-app",
       img: img1,
