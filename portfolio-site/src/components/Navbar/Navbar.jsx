@@ -31,13 +31,21 @@ const Navbar = () => {
           </li>
         </a>
 
-        <a
-          href="/santoshCV.pdf"
-          target="_blank"
+        <button
+          onClick={() => {
+            if (window.gtag) {
+              window.gtag("event", "download_cv", {
+                event_category: "Button",
+                event_label: "Download CV",
+              });
+            }
+            // Open the CV in a new tab
+            window.open("/santoshCV.pdf", "_blank");
+          }}
           className="inline-block px-5 py-2 border border-blue-500 text-blue-400 font-semibold rounded-lg hover:bg-blue-600 hover:border-blue-600 hover:text-white hover:shadow-[0_0_10px_#3b82f6] transition-all duration-300"
         >
           View CV
-        </a>
+        </button>
       </ul>
 
       {showMenu ? (
@@ -61,7 +69,7 @@ const Navbar = () => {
       )}
 
       <div className="bg-amber-500 flex items-center justify-between mt-5 px-3">
-        The site is under development !!!!! 
+        The site is under development !!!!!
       </div>
     </nav>
   );
